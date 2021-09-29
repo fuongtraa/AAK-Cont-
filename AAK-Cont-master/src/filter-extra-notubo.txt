@@ -1,0 +1,39 @@
+! Filter rules that run only on non-uBlock origin setups.
+! uBO extended syntax for script injection CAN BE USED in this file, as it will be converted to Javascript in the non-uBO userscript.
+! Any other uBO extended syntax filters will be ignored.
+
+! androidcentral.com,connectedly.com,crackberry.com,imore.com,teslacentral.com,vrheads.com,windowscentral.com
+! Issues: #8
+androidcentral.com,connectedly.com,crackberry.com,imore.com,teslacentral.com,vrheads.com,windowscentral.com##script:inject(abort-on-property-write.js, adonisHash)
+androidcentral.com,chicagoreader.com,crackberry.com,imore.com,windowscentral.com##script:inject(setTimeout-defuser.js, ubo, 300)
+@@||doubleclick.net^$script,domain=androidcentral.com
+@@||androidcentral.com/sites/androidcentral.com/files/advagg_js/$script
+
+! gamesradar.com
+! Issues: #10
+gamesradar.com##script:inject(abort-on-property-write.js, _sp_)
+
+! kbb.com
+! Issues: #9
+kbb.com##script:inject(abort-on-property-write.js, KBB.DetectBlockerExtensions)
+
+! oload.tv, openload.co, streamango.com
+! Issues: #29
+oload.tv,openload.co,streamango.com##script:inject(openload.co.js)
+
+! pcgameshardware.de
+! Issues: #30
+pcgames.de,pcgameshardware.de##script:inject(uabinject-defuser.js)
+
+! thewindowsclub.com
+! Issues: #5
+thewindowsclub.com##script:inject(setTimeout-defuser.js, [native code])
+
+! washingtonpost.com
+! Issues: #33
+washingtonpost.com##script:inject(wpredirect-defuser.js)
+
+! windowscentral.com
+! Issue: #220
+@@||doubleclick.net^$script,domain=windowscentral.com
+@@||windowscentral.com/sites/wpcentral.com/files/advagg_js/$script

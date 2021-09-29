@@ -1,0 +1,12 @@
+{
+    "name": "AAK-Cont-Build-Scripts",
+    "description": "Build scripts for AAK-Cont",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/xuhaiyang1234/AAK-Cont.git"
+    },
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "esprima": "~3.1.3"
+    }
+}

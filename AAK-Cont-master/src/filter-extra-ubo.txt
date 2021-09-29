@@ -1,0 +1,2 @@
+! Filter rules that run only on the uBlock Origin setup.
+

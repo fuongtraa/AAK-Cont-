@@ -1,0 +1,81 @@
+! Filter rules not covered by the uBlock Protector filter list.
+! uBO extended syntax for script injection CAN BE USED in this file, as it will be converted to Javascript in the non-uBO userscript.
+! Any other uBO extended syntax filters will be ignored.
+
+! 123link.top
+! Issues: #123
+123link-8989.kxcdn.com/1/2/jquery.adi.js
+
+! androidiani.com
+! Issues: 226
+www.androidiani.com##DIV[id="cboxOverlay"]
+www.androidiani.com##DIV[id="colorbox"]
+asset.pagefair.com/measure.min.js
+asset.pagefair.net/ads.min.js
+
+! altervista.org
+! Issues: #36
+/wp-content/uploads/$script,domain=altervista.org
+
+! cbs.com
+! Issues: #229
+||fastly.net/ads/$image,redirect=2x2-transparent.png
+||fastly.net/ads/$script,redirect=noopjs
+||fastly.net/ads/$xmlhttprequest,redirect=nooptext
+@@||cbs.com^$generichide
+
+! darmowe-pornosy.pl
+! Issues: #83
+darmowe-pornosy.pl###porno_accept
+
+! eurogamer.net
+! Issues: #18
+eurogamer.net##script:inject(abort-on-property.read.js, stop)
+
+! ghacks.net
+! Issues: #138
+ghacks.net##script:inject(noeval.js)
+
+! handelsblatt.com
+! Issues: #71
+handelsblatt.com##script:inject(abort-on-property-read.js, AdController)
+
+! kotaku.com
+! Issues: #228
+mms.kotaku.com$script
+mms.kotaku.com$xmlhttprequest
+
+! ladnydom.pl
+! Issues #131
+||ladnydom.pl/pub/ips/
+||ladnydom.pl/aliasy/ladnydom/adblock_prompt.htm
+
+! nana10.co.li
+! Issues: #21
+@@||cloudvideoplatform.com/advert.jpg$image,domain=nana10.co.il
+
+! perveden.com
+perveden.com###topBoxContainer+div
+
+! transparentcalifornia.com
+! Issues: #15
+transparentcalifornia.com##script:inject(overlay-buster.js)
+
+! uol.com.br
+! Issues: #89
+@@||jsuol.com.br/c/detectadblock/$script,domain=uol.com.br,badfilter
+
+! vidoza.net
+! Issues: #68
+@@||vidoza.net/js/ads.js$script
+@@||vidoza.net/js/pop.js$script
+
+! vtm.be
+! Issues: #27
+||35.184.169.188^$popup
+@@||fwmrm.net^$xmlhttprequest,domain=vtm.be
+
+! socom.yokohama
+! Issues: #227
+socom.yokohama##DIV[class="drIcxojzIxKe-bg"]
+socom.yokohama##DIV[id="tlhrJGlzhzjO"][class="drIcxojzIxKe"]

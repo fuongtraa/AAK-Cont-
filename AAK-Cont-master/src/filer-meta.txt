@@ -1,0 +1,11 @@
+[Adblock Plus 2.0]
+@pragma-insert-title
+! Author: AAK-Cont contributors
+@pragma-insert-version
+! Expires: 1 days
+! License: GNU GPL v3
+! Homepage: https://xuhaiyang1234.gitlab.io/AAK-Cont/
+! Support: https://gitlab.com/xuhaiyang1234/AAK-Cont/issues
+! WritingRules: https://adblockplus.org/filters
+! RedundantRules: https://arestwo.org/famlam/redundantRuleChecker.html
+! RegExpVisualizer http://www.regexper.com/
